@@ -1,22 +1,28 @@
 const { google } = require("googleapis");
 const fs = require("fs");
 
-const credentials = require("../credentials.json").installed;
-const token = require("../token.json");
-
-const {
-  client_secret,
-  client_id,
-  redirect_uris,
-} = credentials;
-
 const oAuth2Client = new google.auth.OAuth2(
-  client_id,
-  client_secret,
-  redirect_uris[0]
+  process.env.GOOGLE_CLIENT_ID,
+  process.env.GOOGLE_CLIENT_SECRET,
+  process.env.GOOGLE_REDIRECT_URI
 );
 
-oAuth2Client.setCredentials(token);
+// console.log("CLIENT ID:", process.env.GOOGLE_CLIENT_ID ? "Loaded" : "Missing");
+// console.log("CLIENT SECRET:", process.env.GOOGLE_CLIENT_SECRET ? "Loaded" : "Missing");
+// console.log("REDIRECT URI:", process.env.GOOGLE_REDIRECT_URI ? "Loaded" : "Missing");
+// console.log("ACCESS TOKEN:", process.env.GOOGLE_ACCESS_TOKEN ? "Loaded" : "Missing");
+// console.log("REFRESH TOKEN:", process.env.GOOGLE_REFRESH_TOKEN ? "Loaded" : "Missing");
+// console.log("SCOPE:", process.env.GOOGLE_TOKEN_SCOPE ? "Loaded" : "Missing");
+// console.log("TOKEN TYPE:", process.env.GOOGLE_TOKEN_TYPE ? "Loaded" : "Missing");
+// console.log("EXPIRY:", process.env.GOOGLE_TOKEN_EXPIRY ? "Loaded" : "Missing");
+
+oAuth2Client.setCredentials({
+  access_token: process.env.GOOGLE_ACCESS_TOKEN,
+  refresh_token: process.env.GOOGLE_REFRESH_TOKEN,
+  scope: process.env.GOOGLE_TOKEN_SCOPE,
+  token_type: process.env.GOOGLE_TOKEN_TYPE,
+  expiry_date: Number(process.env.GOOGLE_TOKEN_EXPIRY),
+});
 
 const drive = google.drive({
   version: "v3",

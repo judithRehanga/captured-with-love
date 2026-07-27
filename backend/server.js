@@ -1,9 +1,8 @@
-const uploadRoutes = require("./routes/uploadRoutes");
-
+require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
-require("dotenv").config();
+const uploadRoutes = require("./routes/uploadRoutes");
 
 const app = express();
 
@@ -13,11 +12,11 @@ app.use(express.json());
 app.use("/upload", uploadRoutes);
 
 app.get("/", (req, res) => {
-    res.send("Captured With Love Backend Running ❤️");
+  res.send("Captured With Love Backend Running ❤️");
 });
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
