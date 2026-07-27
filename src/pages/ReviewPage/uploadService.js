@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://172.20.10.3:5000";
+const API = "https://captured-with-love-api.onrender.com";
 
 export const uploadFiles = async (
   files,
