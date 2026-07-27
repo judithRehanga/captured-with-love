@@ -3,3 +3,6 @@ token.json
 uploads/
 .env
 node_modules/
+backend/.env
+backend/token.json
+backend/credentials.jsoncl
