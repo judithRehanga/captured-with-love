@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
 
 @import "./variables.css";
 @import "./animations.css";
@@ -16,31 +16,33 @@ html{
 
 body{
 
-    background:var(--color-background);
+    font-family:var(--font-body);
 
     color:var(--color-text);
 
-    font-family:var(--font-body);
-
     overflow-x:hidden;
+
+    background-image:url("/images/wedding-background.png");
+
+    background-repeat:repeat;
+
+    background-size:400px;
+
+    background-position:top left;
 
 }
 
 img{
 
-    max-width:100%;
     display:block;
+    max-width:100%;
 
 }
 
 button{
 
-    border:none;
-
-    background:none;
-
     cursor:pointer;
-
+    border:none;
     font-family:inherit;
 
 }
@@ -48,7 +50,6 @@ button{
 a{
 
     text-decoration:none;
-
     color:inherit;
 
 }
@@ -57,4 +58,38 @@ ul{
 
     list-style:none;
 
+}
+
+.hero-title{
+
+    font-family:var(--font-script);
+
+    font-size:4rem;
+
+    color:var(--color-primary);
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.hero-subtitle{
+
+    max-width:650px;
+
+    margin:0 auto 50px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    font-size:1.2rem;
+
+    color:var(--color-text-light);
+
+}
+
+html{
+    scroll-behavior:smooth;
 }

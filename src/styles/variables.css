@@ -1,72 +1,53 @@
-:root {
+:root{
 
-  /* ===========================
-     COLORS
-  ============================ */
+    /* ========= COLORS ========= */
 
-  --color-background: #F8F6F2;
-  --color-surface: #FFFFFF;
+    --color-background:#F8F6F2;
+    --color-surface:#FFFFFF;
 
-  --color-primary: #8C9A7B;
-  --color-primary-dark: #65715A;
-  --color-primary-light: #C9D1C0;
+    --color-primary:#8C9A7B;
+    --color-primary-dark:#65715A;
+    --color-primary-light:#C9D1C0;
 
-  --color-gold: #C8A96A;
-  --color-gold-light: #E6D1A5;
+    --color-accent:#C8A96A;
 
-  --color-text: #3E3A36;
-  --color-text-light: #7B766F;
+    --color-text:#3E3A36;
+    --color-text-light:#7B766F;
 
-  --color-border: #E5DED2;
+    --color-border:#E5DED2;
 
-  --color-success: #5E8C61;
-  --color-error: #C75D5D;
+    --color-success:#5E8C61;
+    --color-error:#C75D5D;
 
-  /* ===========================
-     FONTS
-  ============================ */
+    /* ========= FONTS ========= */
 
-  --font-heading: "Cormorant Garamond", serif;
-  --font-body: "Cormorant Garamond", serif;
-  --font-accent: "Allura", cursive;
+    --font-heading:"Cormorant Garamond", serif;
+    --font-body:"Cormorant Garamond", serif;
+    --font-script:"Allura", cursive;
 
-  /* ===========================
-     SPACING
-  ============================ */
+    /* ========= SPACING ========= */
 
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 24px;
-  --space-lg: 32px;
-  --space-xl: 48px;
-  --space-2xl: 64px;
-  --space-3xl: 96px;
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:32px;
+    --space-xl:48px;
+    --space-2xl:64px;
+    --space-3xl:96px;
 
-  /* ===========================
-     BORDER RADIUS
-  ============================ */
+    /* ========= RADIUS ========= */
 
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 40px;
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-xl:40px;
 
-  /* ===========================
-     SHADOWS
-  ============================ */
+    /* ========= SHADOW ========= */
 
-  --shadow-soft:
-      0 10px 30px rgba(0,0,0,.08);
+    --shadow-soft:0 12px 40px rgba(0,0,0,.08);
 
-  --shadow-card:
-      0 15px 40px rgba(0,0,0,.10);
+    /* ========= TRANSITIONS ========= */
 
-  /* ===========================
-     TRANSITIONS
-  ============================ */
-
-  --transition-fast: .2s ease;
-  --transition-normal: .4s ease;
-  --transition-slow: .7s ease;
+    --transition:.35s ease;
 
 }

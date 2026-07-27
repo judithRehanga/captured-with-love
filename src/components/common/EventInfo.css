@@ -1,0 +1,40 @@
+.event-info{
+    display:flex;
+    justify-content:center;
+    margin-top:70px;
+}
+
+.event-card{
+
+    width:min(600px,95%);
+    padding:40px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.05);
+
+    text-align:center;
+}
+
+.event-card h3{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+    color:var(--color-text);
+}
+
+.event-card p{
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:#666;
+}

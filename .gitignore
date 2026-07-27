@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+backend/credentials.json
+backend/token.json
+backend/uploads/
+backend/.env
+backend/node_modules/

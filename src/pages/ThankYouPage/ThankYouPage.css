@@ -1,0 +1,43 @@
+.thank-you-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background:#f8f6f2; */
+    padding:30px;
+}
+
+.thank-you-card{
+    max-width:500px;
+    width:100%;
+    background:white;
+    padding:60px 40px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+}
+
+.heart{
+    font-size:48px;
+    color:#a4ae8a;
+    margin-bottom:15px;
+}
+
+.thank-you-card h1{
+    margin-bottom:20px;
+}
+
+.thank-you-card p{
+    margin-bottom:12px;
+    line-height:1.7;
+}
+
+.home-button{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 32px;
+    border-radius:999px;
+    background:#a4ae8a;
+    color:white;
+    text-decoration:none;
+}

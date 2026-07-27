@@ -1,0 +1,13 @@
+.card{
+
+    background:white;
+
+    border-radius:var(--radius-lg);
+
+    padding:var(--space-xl);
+
+    box-shadow:var(--shadow-soft);
+
+    border:1px solid var(--color-border);
+
+}

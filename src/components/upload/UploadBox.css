@@ -1,0 +1,62 @@
+.upload-box{
+
+    width:min(700px,100%);
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.05);
+
+}
+
+.upload-box h2{
+
+    font-family:var(--font-heading);
+
+    font-size:2.4rem;
+
+    margin-bottom:16px;
+
+}
+
+.upload-box p{
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+
+.upload-box button{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:999px;
+
+    padding:16px 36px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+}
+
+.selected-files{
+
+    margin-top:25px;
+
+    color:var(--color-primary);
+
+    font-weight:600;
+
+}
