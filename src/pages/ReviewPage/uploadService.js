@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "https://captured-with-love-api.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const uploadFiles = async (
   files,
