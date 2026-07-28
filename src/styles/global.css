@@ -2,7 +2,6 @@
 
 @import "./variables.css";
 @import "./animations.css";
-@import "./responsive.css";
 
 *{
     margin:0;
