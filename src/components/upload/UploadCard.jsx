@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useUpload } from "../../context/UploadContext";
 import "./UploadCard.css";
-import Button from "../ui/Button";
+import Button from "../ui/button";
 import FilePreview from "./FilePreview";
 import { useNavigate } from "react-router-dom";
 

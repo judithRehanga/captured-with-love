@@ -1,7 +1,5 @@
 import "./Hero.css";
 import { useEffect } from "react";
-// import Button from "../../ui/button";
-// import { Link } from "react-router-dom";
 
 function Hero({ event }) {
   useEffect(() => {
