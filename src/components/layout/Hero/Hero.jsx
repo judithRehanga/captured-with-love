@@ -3,7 +3,8 @@ import { useEffect } from "react";
 
 function Hero({ event }) {
   useEffect(() => {
-    fetch("http://localhost:5000")
+    // fetch("http://localhost:5000")
+    fetch("https://captured-with-love-api.onrender.com/")
       .then((res) => res.text())
       .then((data) => console.log(data))
       .catch((err) => console.error(err));

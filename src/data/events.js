@@ -4,7 +4,7 @@ export const events = {
 
     title:"Engagement Celebration",
 
-    date:"20 December 2026",
+    date:"01 August 2026",
 
     location:"Colombo, Sri Lanka"
 },
